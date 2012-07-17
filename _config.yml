@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://huangcd.herokuapp.com/
+url: http://huangcd.github.com
 title: 流水笔记
 subtitle: A blogging framework for hackers.
 author: huangcd

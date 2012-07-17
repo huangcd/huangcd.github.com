@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[流水笔记]]></title>
-  <link href="http://huangcd.herokuapp.com//atom.xml" rel="self"/>
-  <link href="http://huangcd.herokuapp.com//"/>
-  <updated>2012-07-17T23:07:28+08:00</updated>
-  <id>http://huangcd.herokuapp.com//</id>
+  <link href="http://huangcd.github.com/atom.xml" rel="self"/>
+  <link href="http://huangcd.github.com/"/>
+  <updated>2012-07-17T23:41:46+08:00</updated>
+  <id>http://huangcd.github.com/</id>
   <author>
     <name><![CDATA[huangcd]]></name>
     
