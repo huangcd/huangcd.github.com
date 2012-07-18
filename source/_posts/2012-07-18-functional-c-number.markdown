@@ -7,7 +7,6 @@ categories: [函数式, C#, lambda]
 author: huangcd
 ---
 
-title: "函数式C#的尝试"
 由于工作的需要，最近需要大量使用MS系的产品，
 Visual Studio和C#首当其冲（吐槽一下，
 Visual Studio的快捷键和Intelligence太弱了，
