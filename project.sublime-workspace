@@ -1,0 +1,662 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"lo",
+				"log"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "_config.yml",
+			"settings":
+			{
+				"buffer_size": 2945,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Rakefile",
+			"settings":
+			{
+				"buffer_size": 15102,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "source/_posts/2012-07-18-functional-c-number.markdown",
+			"settings":
+			{
+				"buffer_size": 173,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"graph",
+				"Git: Graph Current File"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"mar",
+				"Set Syntax: Markdown"
+			],
+			[
+				"mark",
+				"Markdown Preview: current file in Sublime Text"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 260.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Octopress/source/_posts/2012-07-17-zombie-ninjas-attack.markdown",
+		"/C/Users/Huangcd/Desktop/CameraAndroid/AndroidManifest.xml",
+		"/C/Users/Huangcd/Desktop/身份证",
+		"/D/Octopress/.gitignore",
+		"/C/Users/Huangcd/Desktop/DevKit/config.yml",
+		"/C/Users/Huangcd/Desktop/index.html",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/data/chap_modeling.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/data/cover.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/main.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/data/chap_intro.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/data/chap_design.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/data/chap_case.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/slide/slide.tex",
+		"/C/Users/Huangcd/Desktop/讲稿.txt",
+		"/C/Users/Huangcd/Desktop/thuthesis/slide/slide_backup.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/data/resume.tex",
+		"/C/Users/Huangcd/Desktop/EdolaProject/Multiplexer.edola",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/data/chap_conclusion.tex",
+		"/D/Program files/texlive/texmf-dist/doc/latex/flashmovie/test-beamer-0.tex",
+		"/D/Program files/eclipse/workspace/EdolaModelingPlatform/docs/Baselinelibrary/装置控制基准线.xml",
+		"/C/Users/Huangcd/Desktop/课件源码/ann.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/slide/beamerformat.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/main.pdf",
+		"/C/Users/Huangcd/Desktop/thuthesis/slide/setup/format.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/slide/setup/beamerformat.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/shuji.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/texput.log",
+		"/D/Program files/Mozilla Thunderbird/profiles/huangcd/ImapMail/imap.googlemail-3.com.msf",
+		"/D/Program files/Mozilla Thunderbird/profiles/huangcd/prefs.js",
+		"/D/Program files/Mozilla Firefox/profiles/huangcd/jetpack/jid0-GXjLLfbCoAx0LcltEdFrEkQdQPI@jetpack/simple-storage/store.json",
+		"/D/Program files/Mozilla Firefox/profiles/huangcd/sessionstore.js",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/ref/refs.bib",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/data/denotation.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/data/chap_conclusion.aux",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/data/chap_background.tex",
+		"/C/Users/Huangcd/Desktop/EdolaProject/Multiplexer.edolam",
+		"/C/Users/Huangcd/Desktop/EdolaProject/DPU.edolam",
+		"/D/programming/MyProjectInBitBucket/paperInAcromag/all.bip",
+		"/C/Users/Huangcd/Desktop/EdolaProject/.edolaProject",
+		"/C/Users/Huangcd/Desktop/EdolaProject/DPU.edola",
+		"/C/Users/Huangcd/Desktop/sensor.edolaa",
+		"/C/Users/Huangcd/Desktop/aaa.edola",
+		"/D/document/我的微盘/paper/all.bip",
+		"/D/Program files/texlive/texmf-dist/doc/latex/pdfcomment/example_xelatex.tex",
+		"/D/Program files/protable/Sublime Text/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Huangcd/Desktop/thuthesis/thuthesis/latex/main.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/thuthesis.cls",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/thuthesis.cfg",
+		"/C/Users/Huangcd/Desktop/thuthesis/thesis/thuthesis.dtx",
+		"/D/Games/KOF/debug.log",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/data/chap_case.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/data/chap_intro.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/ref/refs.bib",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/main.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/data/chap_modeling.tex",
+		"/C/Users/Huangcd/Desktop/算法分析与设计第十次作业.tex",
+		"/C/Users/Huangcd/AppData/Local/Temp/7zEE174.tmp/算法分析与设计第十次作业.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/data/chap_conclusion.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/data/cover.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/data/chap_background.tex",
+		"/D/Program files/protable/Sublime Text/Data/Packages/User/xelatex.py",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/data/resume.tex",
+		"/C/Users/Huangcd/Desktop/测量.txt",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/论文.txt",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/data/chap_conclusion.aux",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/data/chap_background.aux",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/data/chap_platform.tex",
+		"/C/Users/huangcd/Desktop/thuthesis/latex/main.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/data/chap_intro.aux",
+		"/C/Users/Huangcd/Desktop/项目/codegen/model.h",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/data/chap_preliminaries.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/data/denotation.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/data/chap_verification.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/data/chap_01.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/data/ack.tex",
+		"/C/Users/huangcd/Desktop/thuthesis/latex/data/chap_platform.tex",
+		"/C/Users/huangcd/Desktop/thuthesis/latex/data/chap_modeling.tex",
+		"/C/Users/huangcd/Desktop/thuthesis/latex/data/denotation.tex",
+		"/C/Users/huangcd/Desktop/thuthesis/latex/data/resume.tex",
+		"/C/Users/huangcd/Desktop/thuthesis/latex/data/cover.tex",
+		"/C/Users/huangcd/Desktop/thuthesis/latex/data/chap_01.tex",
+		"/C/Users/huangcd/Desktop/thuthesis/latex/data/chap_modeling.aux",
+		"/C/Users/Huangcd/Desktop/论文.txt",
+		"/C/Users/Huangcd/Desktop/仙剑.PLS",
+		"/C/Users/huangcd/Desktop/thuthesis/latex/data/resume.aux",
+		"/C/Users/huangcd/Desktop/thuthesis/latex/ref/refs.bib",
+		"/C/Users/huangcd/Desktop/thuthesis/latex/data/chap_preliminaries.tex",
+		"/C/Users/huangcd/Desktop/thuthesis/latex/data/chap_intro.tex",
+		"/C/Users/Huangcd/Desktop/thuthesis/latex/build.bat",
+		"/C/Users/huangcd/Desktop/Sublime Text/Data/Packages/Git/README.markdown",
+		"/C/Users/huangcd/Desktop/Sublime Text/Data/Packages/User/xelatex.py",
+		"/C/Users/huangcd/Desktop/thuthesis/latex/data/chap_background.tex",
+		"/C/Users/huangcd/Desktop/thuthesis/latex/data/chap_background.aux",
+		"/C/Users/huangcd/Desktop/thuthesis/latex/data/chap01.tex",
+		"/C/Users/huangcd/Desktop/thuthesis/README.md",
+		"/C/Users/huangcd/Desktop/Sublime Text/Data/Packages/Default/font.py",
+		"/C/Users/huangcd/Desktop/Sublime Text/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/huangcd/Desktop/thuthesis/context/data/cover.tex",
+		"/C/Users/huangcd/Desktop/Sublime Text/Data/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/huangcd/Desktop/Sublime Text/PackageSetup.py",
+		"/C/Users/huangcd/Desktop/Sublime Text/Data/Packages/User/test.py",
+		"/C/Users/huangcd/Desktop/test.js",
+		"/C/Users/huangcd/Desktop/thuthesis/context/main.tex"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"手工地",
+			"大小",
+			"subsection{",
+			"minipage",
+			"                \\",
+			"\n                    \\includegraphics[width=.9\\textwidth]{../thesis/figures/Multiplexer_1.png}",
+			"太空",
+			"形式化方法",
+			"includegraphics",
+			"only",
+			"内容概要",
+			"\\tableofcontents",
+			"装置控制领域实体库",
+			"检测",
+			"打标",
+			"领域基准线",
+			"慕尼黑",
+			"footnotesize",
+			"\\small{",
+			"center",
+			"red",
+			"..\n只可意会，不可言传！",
+			"ValidateConnector",
+			"mails.tsinghua.edu.cn",
+			"模型层",
+			"我们",
+			"我",
+			"我们",
+			"TSmart",
+			"一一对应",
+			"TSmart",
+			"tsmart",
+			"[TSmart类]",
+			"{TSmart类}",
+			"tsmart",
+			"TSmart	",
+			"建模模块",
+			"TSmart",
+			"	",
+			"gef",
+			"一一对应",
+			"一一映射",
+			"cha:design",
+			"SendAndRecv",
+			"syncInt",
+			"syncDPUSet",
+			"SynchronizedMix",
+			"SyncDPUTick",
+			"SynchronizedInt",
+			"SingletonInt",
+			"Sensor1",
+			"WARNING",
+			"small",
+			"WARNING",
+			"cn.edu.tsinghua.thss.tsmart.modeling.edola.models",
+			"simple",
+			".png",
+			"png",
+			"Monitor",
+			"RightData",
+			"~",
+			"typewriter",
+			"	",
+			"engcover",
+			"post",
+			"algorithm",
+			"\\thu@engcover",
+			"master",
+			"硕士",
+			"\\ifthu@master",
+			"master",
+			"MultiplexerRecv",
+			"DPU 系统的BIP 结构框图",
+			"bip",
+			"，最终得到",
+			"dpu_framework",
+			"figure",
+			"一体化的",
+			"一体化",
+			"最开始",
+			"ding{52}",
+			"√",
+			"tab",
+			"tabu",
+			"figure",
+			"低层",
+			"在辅助验证层，TSmart并不对系统工作验证，而是将系统",
+			"优先",
+			"优先状态自动机",
+			"有限状态自动机",
+			"        ",
+			"	",
+			"F5",
+			"import"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"集成"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_config.yml",
+					"settings":
+					{
+						"buffer_size": 2945,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2944,
+								2944
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1420.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Rakefile",
+					"settings":
+					{
+						"buffer_size": 15102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 13.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Huangcd/.ssh/id_rsa.pub",
+					"settings":
+					{
+						"buffer_size": 403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								403
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "source/_posts/2012-07-18-functional-c-number.markdown",
+					"settings":
+					{
+						"buffer_size": 173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"slide",
+				"thuthesis/slide/slide.tex"
+			],
+			[
+				"cover",
+				"thuthesis/thesis/data/cover.tex"
+			],
+			[
+				"case",
+				"thuthesis/thesis/data/chap_case.tex"
+			],
+			[
+				"modeling",
+				"thuthesis/thesis/data/chap_modeling.tex"
+			],
+			[
+				"design",
+				"thuthesis/thesis/data/chap_design.tex"
+			],
+			[
+				"intro",
+				"thuthesis/thesis/data/chap_intro.tex"
+			],
+			[
+				"main",
+				"thuthesis/thesis/main.tex"
+			],
+			[
+				"resume",
+				"thuthesis/thesis/data/resume.tex"
+			],
+			[
+				"slide_ba",
+				"thuthesis/slide/slide_backup.tex"
+			],
+			[
+				"conclusion",
+				"thuthesis/thesis/data/chap_conclusion.tex"
+			],
+			[
+				"chap_modeling",
+				"thuthesis/thesis/data/chap_modeling.tex"
+			],
+			[
+				"desig",
+				"thuthesis/thesis/data/chap_design.tex"
+			],
+			[
+				"beamer",
+				"thuthesis/slide/setup/beamerformat.tex"
+			],
+			[
+				"format",
+				"thuthesis/slide/setup/format.tex"
+			],
+			[
+				"model",
+				"thuthesis/thesis/data/chap_modeling.tex"
+			],
+			[
+				"shuji",
+				"thuthesis/thesis/shuji.tex"
+			],
+			[
+				"deno",
+				"thuthesis/thesis/data/denotation.tex"
+			],
+			[
+				"ref",
+				"thuthesis/thesis/ref/refs.bib"
+			],
+			[
+				"de",
+				"thuthesis/thesis/data/denotation.tex"
+			],
+			[
+				"back",
+				"thuthesis/thesis/data/chap_background.tex"
+			],
+			[
+				"platform",
+				"data/chap_platform.tex"
+			],
+			[
+				"论文",
+				"论文.txt"
+			],
+			[
+				"den",
+				"/C/Users/huangcd/Desktop/thuthesis/latex/data/denotation.tex"
+			],
+			[
+				"plat",
+				"/C/Users/huangcd/Desktop/thuthesis/latex/data/chap_platform.tex"
+			],
+			[
+				"pl",
+				"latex/data/chap_platform.tex"
+			],
+			[
+				"chap_01",
+				"latex/data/chap_01.tex"
+			],
+			[
+				"prelim",
+				"latex/data/chap_preliminaries.tex"
+			],
+			[
+				"refs",
+				"latex/ref/refs.bib"
+			],
+			[
+				"chap_intro",
+				"latex/data/chap_intro.tex"
+			],
+			[
+				"pre",
+				"latex/data/chap_preliminaries.tex"
+			],
+			[
+				"chap_prelim",
+				"latex/data/chap_preliminaries.tex"
+			],
+			[
+				"chap_pre",
+				"latex/data/chap_platform.tex"
+			],
+			[
+				"chap_inro",
+				"latex/data/chap_intro.tex"
+			],
+			[
+				"chap_back",
+				"latex/data/chap_background.tex"
+			],
+			[
+				"chap_background",
+				"latex/data/chap_background.aux"
+			],
+			[
+				"rea",
+				"README.md"
+			],
+			[
+				"",
+				"latex/data/chap01.tex"
+			],
+			[
+				"chap01",
+				"latex/data/chap01.tex"
+			],
+			[
+				"nota",
+				"latex/data/denotation.tex"
+			],
+			[
+				"cha",
+				"latex/data/chap01.tex"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"chap01.tex",
+				"latex/data/chap01.tex"
+			],
+			[
+				"main.tex",
+				"latex/main.tex"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

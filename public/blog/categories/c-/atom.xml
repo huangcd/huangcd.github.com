@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[流水笔记]]></title>
-  <link href="http://huangcd.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: C# | 流水笔记]]></title>
+  <link href="http://huangcd.github.com/blog/categories/c-/atom.xml" rel="self"/>
   <link href="http://huangcd.github.com/"/>
   <updated>2012-07-18T08:24:29+08:00</updated>
   <id>http://huangcd.github.com/</id>
@@ -18,7 +18,7 @@
     <link href="http://huangcd.github.com/blog/2012/07/18/functional-c-number/"/>
     <updated>2012-07-18T07:20:00+08:00</updated>
     <id>http://huangcd.github.com/blog/2012/07/18/functional-c-number</id>
-    <content type="html"><![CDATA[<p>title: &#8220;函数式C#的尝试&#8221;
+    <content type="html"><![CDATA[<p>title: "函数式C#的尝试"
 由于工作的需要，最近需要大量使用MS系的产品，
 Visual Studio和C#首当其冲（吐槽一下，
 Visual Studio的快捷键和Intelligence太弱了，
@@ -40,7 +40,7 @@ Python的map、reduce、filter
 <p>粗略看了一下C#，发现居然没有map、reduce、filter几个函数，
 深感无力，决定自己轮子一下：</p>
 
-<div><script src='https://gist.github.com/3133167.js?file='></script>
+<p><div><script src='https://gist.github.com/3133167.js?file='></script>
 <noscript><pre><code>public static IEnumerable&lt;TResult&gt; Map&lt;in TSource, TResult&gt;(IEnumerable&lt;TSource&gt; sources, Func&lt;TSource, TResult&gt; mapper)
 {
     foreach (var source in sources)
@@ -48,7 +48,7 @@ Python的map、reduce、filter
         yield return mapper(source);
     }
 }</code></pre></noscript></div>
-
+</p>
 ]]></content>
   </entry>
   
