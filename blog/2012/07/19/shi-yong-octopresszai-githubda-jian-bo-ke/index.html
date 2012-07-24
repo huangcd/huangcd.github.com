@@ -12,12 +12,11 @@
   <meta name="description" content="使用rubyInstaller安装ruby1.9.2
 使用msysgit安装git
 按照教程安装development-kit
-在命令行下执行下面代码 1
+在命令行下执行下面代码 gem install 1
 2
 3
 4
-git clone git://github.com/imathis/octopress.git octopress
-cd &hellip;">
+git clone git://github.com/imathis/octopress.git &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -38,6 +37,18 @@ cd &hellip;">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33586871-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -98,15 +109,16 @@ cd &hellip;">
   </header>
 
 
-<div class="entry-content"><ol>
+<div class="entry-content"><ul>
 <li>使用<a href="http://rubyforge.org/frs/download.php/75127/rubyinstaller-1.9.2-p290.exe">rubyInstaller</a>安装ruby1.9.2</li>
 <li>使用<a href="http://code.google.com/p/msysgit/downloads/list">msysgit</a>安装git</li>
 <li>按照<a href="https://github.com/oneclick/rubyinstaller/wiki/development-kit">教程</a>安装<a href="https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe">development-kit</a></li>
 <li>在命令行下执行下面代码</li>
-</ol>
+</ul>
 
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>gem install  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -114,23 +126,36 @@ cd &hellip;">
 </span><span class='line'><span class="nb">cd </span>octopress
 </span><span class='line'>gem install bundler
 </span><span class='line'>bundle install
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>如果gem install的速度比较慢，可以把gem的源换成taobao的</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>gem sources --remove http://rubygems.org/
-</span><span class='line'>gem sources -a http://ruby.taobao.org/
-</span></code></pre></td></tr></table></div></figure>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 
 <p>安装过程中可能会遇到一些问题，自行google之。</p>
 
-<ol>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>gem source  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>gem sources --remove http://rubygems.org/
+</span><span class='line'>gem sources -a http://ruby.taobao.org/
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+<p>如果gem install的速度比较慢，可以把gem的源换成taobao的。</p>
+
+<ul>
 <li>在github创建一个名字为[userName].github.com的项目，然后根据<a href="https://help.github.com/">help</a>的内容进行配置。</li>
-</ol>
+<li>执行下面代码</li>
+</ul>
+
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>setup and deploy </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake setup_github_pages
+</span><span class='line'>rake generate
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
 
 </div>
 
@@ -159,7 +184,7 @@ cd &hellip;">
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/octopress/'>Octopress</a>, <a class='category' href='/blog/categories/github/'>github</a>, <a class='category' href='/blog/categories/博客/'>博客</a>
+    <a class='category' href='/blog/categories/octopress/'>Octopress</a>, <a class='category' href='/blog/categories/blog/'>blog</a>, <a class='category' href='/blog/categories/github/'>github</a>
   
 </span>
 
@@ -168,7 +193,7 @@ cd &hellip;">
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://huangcd.github.com/blog/2012/07/19/shi-yong-octopresszai-githubda-jian-bo-ke/" data-via="" data-counturl="http://huangcd.github.com/blog/2012/07/19/shi-yong-octopresszai-githubda-jian-bo-ke/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://huangcd.github.com/blog/2012/07/19/shi-yong-octopresszai-githubda-jian-bo-ke/" data-via="huangcd" data-counturl="http://huangcd.github.com/blog/2012/07/19/shi-yong-octopresszai-githubda-jian-bo-ke/" >Tweet</a>
   
   
   
@@ -182,6 +207,8 @@ cd &hellip;">
         <a class="basic-alignment left" href="/blog/2012/07/18/functional-c-number/" title="Previous Post: 函数式C#的尝试">&laquo; 函数式C#的尝试</a>
       
       
+        <a class="basic-alignment right" href="/blog/2012/07/21/sieve-using-linq/" title="Next Post: 使用LINQ表达式来求素数">使用LINQ表达式来求素数 &raquo;</a>
+      
     </p>
   </footer>
 </article>
@@ -193,12 +220,30 @@ cd &hellip;">
     <section>
  <h1>Categories</h1>
  <ul id="categories">
- <li class='category'><a href='/blog/categories/c#/'>C# (1)</a></li>
+ <li class='category'><a href='/blog/categories/csharp/'>Csharp (2)</a></li>
+<li class='category'><a href='/blog/categories/haskell/'>Haskell (3)</a></li>
+<li class='category'><a href='/blog/categories/java/'>Java (2)</a></li>
+<li class='category'><a href='/blog/categories/linq/'>LINQ (1)</a></li>
+<li class='category'><a href='/blog/categories/lego/'>Lego (1)</a></li>
 <li class='category'><a href='/blog/categories/octopress/'>Octopress (1)</a></li>
+<li class='category'><a href='/blog/categories/plc/'>PLC (3)</a></li>
+<li class='category'><a href='/blog/categories/programming/'>Programming (5)</a></li>
+<li class='category'><a href='/blog/categories/python/'>Python (14)</a></li>
+<li class='category'><a href='/blog/categories/ubuntu/'>Ubuntu (7)</a></li>
+<li class='category'><a href='/blog/categories/vim/'>Vim (2)</a></li>
+<li class='category'><a href='/blog/categories/webkit/'>Webkit (3)</a></li>
+<li class='category'><a href='/blog/categories/blog/'>blog (1)</a></li>
+<li class='category'><a href='/blog/categories/functional/'>functional (1)</a></li>
 <li class='category'><a href='/blog/categories/github/'>github (1)</a></li>
+<li class='category'><a href='/blog/categories/image/'>image (1)</a></li>
 <li class='category'><a href='/blog/categories/lambda/'>lambda (1)</a></li>
-<li class='category'><a href='/blog/categories/函数式/'>函数式 (1)</a></li>
-<li class='category'><a href='/blog/categories/博客/'>博客 (1)</a></li>
+<li class='category'><a href='/blog/categories/python/'>python (1)</a></li>
+<li class='category'><a href='/blog/categories/transparent/'>transparent (1)</a></li>
+<li class='category'><a href='/blog/categories/water/'>water (1)</a></li>
+<li class='category'><a href='/blog/categories/仙剑/'>仙剑 (5)</a></li>
+<li class='category'><a href='/blog/categories/流水笔记/'>流水笔记 (20)</a></li>
+<li class='category'><a href='/blog/categories/游戏/'>游戏 (2)</a></li>
+<li class='category'><a href='/blog/categories/电影/'>电影 (1)</a></li>
 
  </ul>
 </section><section>
@@ -206,11 +251,23 @@ cd &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/21/sieve-using-linq/">使用LINQ表达式来求素数</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/19/shi-yong-octopresszai-githubda-jian-bo-ke/">使用Octopress在github搭建博客</a>
       </li>
     
       <li class="post">
         <a href="/blog/2012/07/18/functional-c-number/">函数式C#的尝试</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/12/29/yi-ran-shi-jin-tian-de-shi-qing/">依然是今天的事情</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/12/29/tools/">tools</a>
       </li>
     
   </ul>
@@ -246,11 +303,27 @@ cd &hellip;">
 </section>
 
 
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("huangcd", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/huangcd" class="twitter-follow-button" data-show-count="false">Follow @huangcd</a>
+  
+</section>
+
 
 
 <section class="googleplus">
   <h1>
-    <a href="https://plus.google.com/huangcd.thu?rel=author">
+    <a href="https://plus.google.com/112457374017832727892?rel=author">
       <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
       Google+
     </a>

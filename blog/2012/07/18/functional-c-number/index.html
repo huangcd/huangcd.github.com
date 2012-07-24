@@ -30,6 +30,18 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33586871-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -101,76 +113,62 @@
 
 <p>粗略看了一下C#，发现居然没有map、reduce、filter几个函数，深感无力，决定自己轮子一下：</p>
 
-<figure class='code'><figcaption><span>functional C#</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-</pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="k">public</span> <span class="k">static</span> <span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">TResult</span><span class="p">&gt;</span> <span class="n">Map</span><span class="p">&lt;</span><span class="n">TSource</span><span class="p">,</span> <span class="n">TResult</span><span class="p">&gt;</span>
-</span><span class='line'>    <span class="p">(</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">TSource</span><span class="p">&gt;</span> <span class="n">sources</span><span class="p">,</span> <span class="n">Converter</span><span class="p">&lt;</span><span class="n">TSource</span><span class="p">,</span> <span class="n">TResult</span><span class="p">&gt;</span> <span class="n">converter</span><span class="p">)</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>    <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">source</span> <span class="k">in</span> <span class="n">sources</span><span class="p">)</span>
-</span><span class='line'>    <span class="p">{</span>
-</span><span class='line'>        <span class="k">yield</span> <span class="k">return</span> <span class="nf">converter</span><span class="p">(</span><span class="n">source</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">public</span> <span class="k">static</span> <span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">TItem</span><span class="p">&gt;</span> <span class="n">Filter</span><span class="p">&lt;</span><span class="n">TItem</span><span class="p">&gt;</span>
-</span><span class='line'>    <span class="p">(</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">TItem</span><span class="p">&gt;</span> <span class="n">sources</span><span class="p">,</span> <span class="n">Predicate</span><span class="p">&lt;</span><span class="n">TItem</span><span class="p">&gt;</span> <span class="n">predicater</span><span class="p">)</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>    <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">item</span> <span class="k">in</span> <span class="n">sources</span><span class="p">)</span>
-</span><span class='line'>    <span class="p">{</span>
-</span><span class='line'>        <span class="k">if</span> <span class="p">(</span><span class="n">predicater</span><span class="p">(</span><span class="n">item</span><span class="p">))</span>
-</span><span class='line'>        <span class="p">{</span>
-</span><span class='line'>            <span class="k">yield</span> <span class="k">return</span> <span class="n">item</span><span class="p">;</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">public</span> <span class="k">delegate</span> <span class="n">TResult</span> <span class="n">Accumulator</span><span class="p">&lt;</span><span class="k">in</span> <span class="n">TSource</span><span class="p">,</span> <span class="n">TResult</span><span class="p">&gt;</span>
-</span><span class='line'>    <span class="p">(</span><span class="n">TSource</span> <span class="n">source</span><span class="p">,</span> <span class="n">TResult</span> <span class="n">result</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">public</span> <span class="k">static</span> <span class="n">TResult</span> <span class="n">Reduce</span><span class="p">&lt;</span><span class="n">TSource</span><span class="p">,</span> <span class="n">TResult</span><span class="p">&gt;</span>
-</span><span class='line'>    <span class="p">(</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">TSource</span><span class="p">&gt;</span> <span class="n">sources</span><span class="p">,</span> <span class="n">TResult</span> <span class="n">initValue</span><span class="p">,</span>
-</span><span class='line'>     <span class="n">Accumulator</span><span class="p">&lt;</span><span class="n">TSource</span><span class="p">,</span> <span class="n">TResult</span><span class="p">&gt;</span> <span class="n">accumulator</span><span class="p">)</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>    <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">source</span> <span class="k">in</span> <span class="n">sources</span><span class="p">)</span>
-</span><span class='line'>    <span class="p">{</span>
-</span><span class='line'>        <span class="n">initValue</span> <span class="p">=</span> <span class="n">accumulator</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">initValue</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>    <span class="k">return</span> <span class="n">initValue</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
+<p>``` csharp functional C#
+public static IEnumerable<TResult> Map&lt;TSource, TResult></p>
 
+<pre><code>(IEnumerable&lt;TSource&gt; sources, Converter&lt;TSource, TResult&gt; converter)
+</code></pre>
+
+<p>{</p>
+
+<pre><code>foreach (var source in sources)
+{
+    yield return converter(source);
+}
+</code></pre>
+
+<p>}</p>
+
+<p>public static IEnumerable<TItem> Filter<TItem></p>
+
+<pre><code>(IEnumerable&lt;TItem&gt; sources, Predicate&lt;TItem&gt; predicater)
+</code></pre>
+
+<p>{</p>
+
+<pre><code>foreach (var item in sources)
+{
+    if (predicater(item))
+    {
+        yield return item;
+    }
+}
+</code></pre>
+
+<p>}</p>
+
+<p>public delegate TResult Accumulator<in TSource, TResult></p>
+
+<pre><code>(TSource source, TResult result);
+</code></pre>
+
+<p>public static TResult Reduce&lt;TSource, TResult></p>
+
+<pre><code>(IEnumerable&lt;TSource&gt; sources, TResult initValue, 
+ Accumulator&lt;TSource, TResult&gt; accumulator)
+</code></pre>
+
+<p>{</p>
+
+<pre><code>foreach (var source in sources)
+{
+    initValue = accumulator(source, initValue);
+}
+return initValue;
+</code></pre>
+
+<p>}
+```</p>
 
 <p>写完之后就深深地被自己的函数式功底折服了~尤其是这Reduce函数，还可以生成Filter和Map两个函数，实在是太给力了。。。</p>
 
@@ -178,10 +176,9 @@
 
 <p>然后装了ReSharper（插播一下，ReSharper真的可以让Visual Studio好用一万倍啊一万倍），猛然又发现，ReShaper函数上直接提示说这个可以换成LINQ表达式！我勒个去，Ctrl+Enter之后果然把Reduce函数变成了这个样子：</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="k">return</span> <span class="n">sources</span><span class="p">.</span><span class="n">Aggregate</span><span class="p">(</span><span class="n">initValue</span><span class="p">,</span> <span class="p">(</span><span class="n">current</span><span class="p">,</span> <span class="n">source</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">accumulator</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">current</span><span class="p">));</span>
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>csharp
+return sources.Aggregate(initValue, (current, source) =&gt; accumulator(source, current));
+</code></p>
 
 <p>于是我就不能忍了，直接上.NET Reflector看源码，发现Aggregate、Select、Where几个函数长得基本和我写得差不多，总算舒服一点。。。</p>
 
@@ -213,7 +210,7 @@
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/c-/'>C#</a>, <a class='category' href='/blog/categories/lambda/'>lambda</a>, <a class='category' href='/blog/categories/函数式/'>函数式</a>
+    <a class='category' href='/blog/categories/csharp/'>Csharp</a>, <a class='category' href='/blog/categories/functional/'>functional</a>, <a class='category' href='/blog/categories/lambda/'>lambda</a>
   
 </span>
 
@@ -222,7 +219,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://huangcd.github.com/blog/2012/07/18/functional-c-number/" data-via="" data-counturl="http://huangcd.github.com/blog/2012/07/18/functional-c-number/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://huangcd.github.com/blog/2012/07/18/functional-c-number/" data-via="huangcd" data-counturl="http://huangcd.github.com/blog/2012/07/18/functional-c-number/" >Tweet</a>
   
   
   
@@ -232,6 +229,8 @@
 
     
     <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2010/12/29/yi-ran-shi-jin-tian-de-shi-qing/" title="Previous Post: 依然是今天的事情">&laquo; 依然是今天的事情</a>
       
       
         <a class="basic-alignment right" href="/blog/2012/07/19/shi-yong-octopresszai-githubda-jian-bo-ke/" title="Next Post: 使用Octopress在github搭建博客">使用Octopress在github搭建博客 &raquo;</a>
@@ -247,12 +246,30 @@
     <section>
  <h1>Categories</h1>
  <ul id="categories">
- <li class='category'><a href='/blog/categories/c#/'>C# (1)</a></li>
+ <li class='category'><a href='/blog/categories/csharp/'>Csharp (2)</a></li>
+<li class='category'><a href='/blog/categories/haskell/'>Haskell (3)</a></li>
+<li class='category'><a href='/blog/categories/java/'>Java (2)</a></li>
+<li class='category'><a href='/blog/categories/linq/'>LINQ (1)</a></li>
+<li class='category'><a href='/blog/categories/lego/'>Lego (1)</a></li>
 <li class='category'><a href='/blog/categories/octopress/'>Octopress (1)</a></li>
+<li class='category'><a href='/blog/categories/plc/'>PLC (3)</a></li>
+<li class='category'><a href='/blog/categories/programming/'>Programming (5)</a></li>
+<li class='category'><a href='/blog/categories/python/'>Python (14)</a></li>
+<li class='category'><a href='/blog/categories/ubuntu/'>Ubuntu (7)</a></li>
+<li class='category'><a href='/blog/categories/vim/'>Vim (2)</a></li>
+<li class='category'><a href='/blog/categories/webkit/'>Webkit (3)</a></li>
+<li class='category'><a href='/blog/categories/blog/'>blog (1)</a></li>
+<li class='category'><a href='/blog/categories/functional/'>functional (1)</a></li>
 <li class='category'><a href='/blog/categories/github/'>github (1)</a></li>
+<li class='category'><a href='/blog/categories/image/'>image (1)</a></li>
 <li class='category'><a href='/blog/categories/lambda/'>lambda (1)</a></li>
-<li class='category'><a href='/blog/categories/函数式/'>函数式 (1)</a></li>
-<li class='category'><a href='/blog/categories/博客/'>博客 (1)</a></li>
+<li class='category'><a href='/blog/categories/python/'>python (1)</a></li>
+<li class='category'><a href='/blog/categories/transparent/'>transparent (1)</a></li>
+<li class='category'><a href='/blog/categories/water/'>water (1)</a></li>
+<li class='category'><a href='/blog/categories/仙剑/'>仙剑 (5)</a></li>
+<li class='category'><a href='/blog/categories/流水笔记/'>流水笔记 (20)</a></li>
+<li class='category'><a href='/blog/categories/游戏/'>游戏 (2)</a></li>
+<li class='category'><a href='/blog/categories/电影/'>电影 (1)</a></li>
 
  </ul>
 </section><section>
@@ -260,11 +277,23 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/21/sieve-using-linq/">使用LINQ表达式来求素数</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/19/shi-yong-octopresszai-githubda-jian-bo-ke/">使用Octopress在github搭建博客</a>
       </li>
     
       <li class="post">
         <a href="/blog/2012/07/18/functional-c-number/">函数式C#的尝试</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/12/29/yi-ran-shi-jin-tian-de-shi-qing/">依然是今天的事情</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/12/29/tools/">tools</a>
       </li>
     
   </ul>
@@ -300,11 +329,27 @@
 </section>
 
 
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("huangcd", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/huangcd" class="twitter-follow-button" data-show-count="false">Follow @huangcd</a>
+  
+</section>
+
 
 
 <section class="googleplus">
   <h1>
-    <a href="https://plus.google.com/huangcd.thu?rel=author">
+    <a href="https://plus.google.com/112457374017832727892?rel=author">
       <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
       Google+
     </a>
